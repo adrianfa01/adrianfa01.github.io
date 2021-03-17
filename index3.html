@@ -1,0 +1,27 @@
+<html>
+<body>
+
+
+
+<button onclick="typeWriter()"> About Us </button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Here at Prosopo Meats our mission is to provide the highest quality meats from only the finest sources. We promise you will be back for more.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<a href="index4.html">
+<img src="prosopomeats.png" alt="Prosopo Meats Logo" style="width:300px;height:300px;">
+</a>
+</body>
+</html>
