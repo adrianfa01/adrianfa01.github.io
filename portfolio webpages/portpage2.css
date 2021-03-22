@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Glitched Images</h2>
+<p>These original photos of this series are all related to religion. The purpose of the glitches is to signify my belief that, just like glitches, religion is man-made.</p>
+
+<div class="row">
+  <div class="column">
+    <img src="church.jpg" alt="Glitched church" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="sistine.jpg" alt="Glitched sistine" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="glass.jpg" alt="glitched glass" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
